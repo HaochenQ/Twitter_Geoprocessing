@@ -1,0 +1,46 @@
+#!/bin/bash
+#SBATCH -p physical
+#SBATCH --time=00:10:00
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=4
+
+#load module
+module load Python/3.5.2-intel-2017.u2
+
+#run program
+mpirun python test.py
+
+
+
+
+#!/bin/bash
+#SBATCH -partition=physical
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=4
+module load my-app-compiler/version
+srun my-mpi-app
+
+
+
+
+#!/bin/bash
+#SBATCH -partition=physical
+#SBATCH --time=00:10:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-node=8
+#SBATCH --cpus-per-task=1
+
+#load module
+#module load python
+#module load OpenMPI
+
+#run program
+mpirun -np 8 python mpitest.py
+
+
+
+
+
+
+
+
