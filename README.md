@@ -5,7 +5,8 @@ In this project, an parallelised application is designed leveraging SPARTON (the
 • 1 node and 8 cores;  
 • 2 nodes and 8 cores (with 4 cores per node).  is compared.
 ## Files description 
-The melbGrid.json file contains the id and coordinates information of sixteen grids of Melbourne, the bigTwitter.json(tinyTwitter.json) file contains a large number of tweets and relevant information such as the coordinates of each tweet, the tweet texts and so on.
+The *melbGrid.json* file contains the id and coordinates information of sixteen grids of Melbourne.  
+The *bigTwitter.json*(tinyTwitter.json) file contains a large number of tweets and relevant information such as the coordinates of each tweet, the tweet texts and so on.
 ## Goals
 This assignment is to search the large Twitter data set (bigTwitter.json) to identify Twitter activity around Melbourne and the most frequently used hashtags in each of the grid cells (A1...D5). Specifically,
 
